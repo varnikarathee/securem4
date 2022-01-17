@@ -41,11 +41,7 @@ body {
 .display-7 > .mbr-iconfont {
   font-size: 1.5rem;
 }
-/* ---- Fluid typography for mobile devices ---- */
-/* 1.4 - font scale ratio ( bootstrap == 1.42857 ) */
-/* 100vw - current viewport width */
-/* (48 - 20)  48 == 48rem == 768px, 20 == 20rem == 320px(minimal supported viewport) */
-/* 0.65 - min scale variable, may vary */
+
 @media (max-width: 992px) {
   .display-1 {
     font-size: 3.2rem;
@@ -1044,7 +1040,7 @@ a {
   background: #f8f9fb;
 }
 .cid-2 {
-  padding-top: 20rem;
+  padding-top: 23rem;
   padding-bottom: 19rem;
   background-color: #0196e3;
 }
