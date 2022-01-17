@@ -610,7 +610,14 @@ nav .mbr-section-btn {
   -webkit-flex: 1;
 }
 
+.carousel-control {
+  z-index: 10;
+  display: -webkit-flex;
+}
 
+.carousel-controls {
+  display: -webkit-flex;
+}
 
 .media {
   display: -webkit-flex;
@@ -653,10 +660,22 @@ input[type=range] {
   height: 100%;
 }
 
-
+.modal-dialog .carousel-inner {
+  height: calc(100vh - 1.75rem);
+}
 @media (max-width: 575px) {
-  
+  .modal-dialog .carousel-inner {
+    height: calc(100vh - 1rem);
+  }
+}
 
+.carousel-item {
+  text-align: center;
+}
+
+.carousel-item img {
+  margin: auto;
+}
 
 .navbar-toggler {
   align-self: flex-start;
@@ -701,7 +720,11 @@ input[type=range] {
   flex-direction: column;
 }
 
-
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: flex;
+}
 
 .note-air-layout .dropup .dropdown-menu,
 .note-air-layout .navbar-fixed-bottom .dropdown .dropdown-menu {
@@ -896,18 +919,18 @@ margin-bottom: 2rem;
     padding-right: 16px;
   }
 }
-.card-wrapper {
+.card-wrapper,
+.item-wrapper {
   overflow: hidden;
 }
 
 .app-video-wrapper > img {
   opacity: 1;
-}
-.engine{
+}.engine {
 	position: absolute;
 	text-indent: -2400px;
 	text-align: center;
 	padding: 0;
 	top: 0;
 	left: -2400px;
-}}
+}
