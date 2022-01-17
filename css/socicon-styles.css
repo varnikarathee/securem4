@@ -60,4 +60,10 @@
   content: "\e0a5";
 }
 
+.socicon-behance:before {
+  content: "\e010";
+}
 
+.socicon-vimeo:before {
+  content: "\e093";
+}
